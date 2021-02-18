@@ -1,0 +1,23 @@
+{
+  "name": "ol-map",
+  "version": "1.0.0",
+  "description": "basic openlayers map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelKosatka/ol-map.git"
+  },
+  "keywords": [
+    "openlayers",
+    "map"
+  ],
+  "author": "Michael Kosatka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelKosatka/ol-map/issues"
+  },
+  "homepage": "https://github.com/michaelKosatka/ol-map#readme"
+}
