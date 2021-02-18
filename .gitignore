@@ -1,2 +1,6 @@
+.cache
 assignment
 node_modules
+
+# temporary
+dist
