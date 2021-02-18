@@ -1,6 +1,7 @@
 .cache
 assignment
 node_modules
+.prettierignore
 
 # temporary
 dist
