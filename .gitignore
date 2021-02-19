@@ -1,7 +1,12 @@
-.cache
+# project requirements
 assignment
+
+# dependencies
 node_modules
+
+# IDE related
 .prettierignore
 
-# temporary
-dist
+# parcel
+.cache
+dist-dev
