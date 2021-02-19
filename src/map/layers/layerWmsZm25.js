@@ -1,6 +1,6 @@
 import TileLayer from 'ol/layer/Tile';
 import TileWMS from 'ol/source/TileWMS';
-import { krovakDef } from './projectionsDef';
+import { krovakDef } from '../projections/projectionsDef';
 
 export const layerWmsZm25 = new TileLayer({
 	extent: krovakDef.extent,

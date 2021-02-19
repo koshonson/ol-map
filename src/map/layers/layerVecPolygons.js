@@ -1,4 +1,4 @@
-import { polygons } from '../../data/polygons.geojson';
+import { polygons } from '../../../data/polygons.geojson';
 import GeoJSON from 'ol/format/GeoJSON';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';

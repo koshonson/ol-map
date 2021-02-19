@@ -1,5 +1,5 @@
 import { View } from 'ol';
-import { krovakDef } from './projectionsDef';
+import { krovakDef } from './projections/projectionsDef';
 
 export const luzinyView = new View({
 	projection: 'EPSG:5514',
