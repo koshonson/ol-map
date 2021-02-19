@@ -1,8 +1,4 @@
-import proj4 from 'proj4';
-import { get as getProjection } from 'ol/proj';
-import { register } from 'ol/proj/proj4';
-
-const krovakDef = {
+export const krovakDef = {
 	code: 'EPSG:5514',
 	extent: [-925000, -1444353.536, -400646.464, -920000],
 	def: `+proj=krovak
@@ -17,8 +13,3 @@ const krovakDef = {
           +units=m
           +no_defs`
 };
-
-proj4.defs(krovakDef.code, krovakDef.def);
-register(proj4);
-const krovak = getProjection(krovakDef.code);
-krovak.setExtent(krovakDef.extent);
