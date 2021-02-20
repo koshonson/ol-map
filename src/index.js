@@ -9,6 +9,7 @@ import { triggerPointermove } from './map/handlers';
 
 const map = new Map({
 	target: 'map',
+	controls: [],
 	layers: [layerWmsZm25, layerVectorPolygons],
 	overlays: [tooltip],
 	view: luzinyView
