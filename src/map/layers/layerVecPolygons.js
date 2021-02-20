@@ -11,5 +11,6 @@ export const layerVectorPolygons = new VectorLayer({
 	style: feature => {
 		const { hodnota } = feature.getProperties();
 		return baseStyle(hodnota);
-	}
+	},
+	minZoom: 6
 });
