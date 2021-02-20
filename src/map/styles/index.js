@@ -17,7 +17,7 @@ export const baseStyle = value =>
 export const focusStyle = value =>
 	new Style({
 		fill: new Fill({
-			color: `rgba(${COLORS[value]}, 0.45)`
+			color: `rgba(${COLORS[value]}, 0.3)`
 		}),
 		stroke: new Stroke({
 			color: `rgb(${COLORS[value]})`,
