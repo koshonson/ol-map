@@ -1,3 +1,4 @@
+// this handler toggles style of a vector feature in map onmouseenter/onmouseleave
 import { getFeatureFromEvent } from '../utils';
 import { baseStyle, focusStyle } from '../styles';
 
@@ -21,14 +22,11 @@ const setPreviousFeature = (feature, value) => {
 };
 
 // exported event handler that holds the logic
-// try to get a feature on current pointer position
-// if there was a [previousFeature] AND
-// // if it is different than the [current] one, SET its style to [baseStyle]
-// if there is a [current] feature AND
-// // if it is different than the [previousFeature], SET its style to [focusStyle] AND
-// // HOLDS its REFERENCE in the updated [previousFeature] object
-// if there is no [current] feature AND
-// // if there was a [previousFeature], null the [previousFeature]
+// - get a feature on current pointer position
+// - apply appropriate style if a feature was mouseentered/mouseleaved AND
+// // if it actually changed (by compared to [previousFeature] object)
+// - hold reference to the feature in [previousFeature] object OR
+// // null it if there is no feature
 export const featureFocusHandler = ({ event, map }) => {
 	const { originalEvent } = event;
 	const { feature: previous, value: previousValue } = previousFeature;

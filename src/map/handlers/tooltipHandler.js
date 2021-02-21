@@ -3,7 +3,7 @@ import { getFeatureFromEvent, hideElement, clearElementText } from '../utils';
 
 // helper function that recieves [key] and [value] parameters
 // and return a piece of HTML, as follows :
-// '<div class="tooltip-text"><span>[key]: </span>[value}</div>'
+// '<div class="tooltip-text"><span>[key]: </span>[value]</div>'
 
 // both [key] and [value] are expected to be strings or numbers
 // both [key] and [value] are expected to be sourced from properties of a vector feature
@@ -31,9 +31,9 @@ const renderTooltip = options => {
 };
 
 // exported event handler that holds the logic
-// // try to get a feature on current pointer position
-// // if there is a feature render the tooltip displaying its attributes
-// // if not and the tooltip is currently visible, hide it
+// - try to get a feature on current pointer position
+// - if there is a feature render the tooltip displaying its attributes
+// - if not and the tooltip is currently visible, hide it
 export const tooltipHandler = ({ event, map, tooltip }) => {
 	const { originalEvent, coordinate } = event;
 	const feature = getFeatureFromEvent(originalEvent, map);
